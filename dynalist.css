@@ -1,0 +1,142 @@
+/* font */
+/*colorful link and tag*/
+.node-link {
+	color: #bad761;
+	text-decoration: underline;
+}
+.node-tag {
+	display: inline-block;
+	color: #ff9b5e;
+	text-decoration: none;
+	border-radius: 3px;
+	font-weight: normal;
+	padding-left: 3px;
+	padding-right: 3px;
+	max-width: 600px;
+}
+/* use underline instead of italic when ctrl I */
+.node-italics {
+	text-decoration: underline;
+	font-style: normal;
+}
+/* ctrl color*/
+/* change color labels*/
+.set-color-label[data-color="1"],
+.Node-contentContainer.mod-color-label-1 {
+	border-radius: 0;
+	padding-left: 3px !important;
+	border-left: solid red;
+	max-width: 70%;
+}
+
+.set-color-label[data-color="2"],
+.Node-contentContainer.mod-color-label-2 {
+	padding-left: 3px !important;
+
+	border-left: solid orange;
+	border-radius: 0;
+	max-width: 70%;
+}
+
+.set-color-label[data-color="3"],
+.Node-contentContainer.mod-color-label-3 {
+	padding-left: 3px !important;
+	border-left: solid #ffe84a;
+	border-radius: 0;
+	max-width: 70%;
+}
+
+.set-color-label[data-color="4"],
+.Node-contentContainer.mod-color-label-4 {
+	padding-left: 3px !important;
+	border-left: solid green;
+	border-radius: 0;
+	max-width: 70%;
+}
+
+.set-color-label[data-color="5"],
+.Node-contentContainer.mod-color-label-5 {
+	padding-left: 3px !important;
+	border-left: solid #09387d;
+	border-radius: 0;
+	max-width: 70%;
+}
+
+.set-color-label[data-color="6"],
+.Node-contentContainer.mod-color-label-6 {
+	padding-left: 3px !important;
+	border-left: solid purple;
+	border-radius: 0;
+	max-width: 70%;
+}
+/* interface*/
+/*make the custom CSS input box larger under settings */
+.js-update-setting.setting-text-field {
+	height: 20em;
+}
+.setting-left {
+	width: 55%;
+}
+.setting-right {
+	width: 45%;
+}
+/*breadcrump*/
+.DocumentBreadcrumb {
+	margin: 0;
+	padding: 0;
+	min-height: 0;
+	z-index: 5;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: #181818;
+}
+.DocumentTools {
+	margin: 15px;
+	z-index: 5;
+}
+/*fix number list width at the beginning*/
+.Node-self.is-numbered > .Node-bullet {
+	text-align: right;
+	margin-right: 3px;
+	margin-left: -13px;
+}
+.is-mobile .Node-self.is-numbered > .Node-bullet {
+	width: 32px;
+}
+.Node-self.is-parent .node-icon.mod-expand-collapse:before {
+	font-size: 16px;
+}
+.is-mobile .Node-self.is-numbered > .Node-bullet {
+	margin-right: -3px;
+	margin-left: -16px;
+	width: 41px;
+}
+/*hide folder file icon*/
+.DocumentItem {
+	margin: 1px 0;
+}
+.FolderItem-header {
+	padding-left: 10px;
+}
+.FolderItem .DocumentItem .DocumentItem-header {
+	padding-left: 27px;
+}
+.DocumentItem-title,
+.FolderItem-title {
+	margin-left: 0;
+}
+.DocumentItem-icon,
+.FolderItem-icon {
+	display: none;
+}
+/*picture*/
+/*show half or 0.25 by add $h or $q in the end*/
+.node-displayed-image[src$="$h"] {
+	max-width: 50%;
+	max-height: 50%;
+}
+.node-displayed-image[src$="$q"] {
+	max-width: 25%;
+	max-height: 25%;
+}
