@@ -14,6 +14,9 @@
 	padding-right: 3px;
 	max-width: 600px;
 }
+.node-inline-code{
+	color: #58c1f5;
+	}
 /* use underline instead of italic when ctrl I */
 .node-italics {
 	text-decoration: underline;
